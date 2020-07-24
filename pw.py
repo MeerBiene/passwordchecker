@@ -59,15 +59,5 @@ else:
         else:
             print(f"Attempt: {j} >> Okay found your password: {totry}")
             return
-    # recursor()
     
-
-fin = open("B.txt", "rt")
-for line in fin:
-    print(pw, line)
-    print(line.lower() == pw.lower())
-    if line == pw:
-        print("hello, i think i found your password")
-        break
-    else:
-        pass
+    recursor()
